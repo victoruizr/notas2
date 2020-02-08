@@ -50,6 +50,6 @@ export default {
 .my-container {
     padding: 4em;
     margin-top: 150px;
-    width: 25%;
+    width: 50%;
 }
 </style>

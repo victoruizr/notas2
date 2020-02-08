@@ -87,7 +87,7 @@ img {
 .my-container {
     padding: 30px;
     margin-top: 150px;
-    width: 25%;
+    width: 50%;
 }
 </style>
 
