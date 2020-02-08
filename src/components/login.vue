@@ -49,26 +49,26 @@ export default {
         googleLogin: function () {
             var provider = new firebase.auth.GoogleAuthProvider();
 
-            firebase.auth().signInWithPopup(provider).then((result) => {
+            firebase.auth().signInWithPopup(provider).then(() => {
                 this.$router.replace('/privado')
             }).catch(function (error) {
-                alert(err.message)
+                alert(error.message)
             });
         },
         githubLogin: function () {
             var provider = new firebase.auth.GithubAuthProvider();
-            firebase.auth().signInWithPopup(provider).then((result) => {
+            firebase.auth().signInWithPopup(provider).then(() => {
                 this.$router.replace('/privado')
             }).catch(function (error) {
-                alert(err.message)
+                alert(error.message)
             });
         },
         twitterLogin: function () {
             var provider = new firebase.auth.TwitterAuthProvider();
-            firebase.auth().signInWithPopup(provider).then((result) => {
+            firebase.auth().signInWithPopup(provider).then(() => {
                 this.$router.replace('/privado')
             }).catch(function (error) {
-                alert(err.message)
+                alert(error.message)
             });
         },
     },
