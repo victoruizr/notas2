@@ -1,24 +1,5 @@
-# notitas
-
-## Project setup
+# App Notas con Firebase
+## Production Link
 ```
-npm install
+Link a produccion https://adoring-shockley-b7b68e.netlify.com/
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
