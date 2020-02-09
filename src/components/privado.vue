@@ -30,7 +30,6 @@
                 <table class="table table-dark">
                     <thead>
                         <tr>
-                            <th scope="col"></th>
                             <th scope="col">Texto</th>
                             <th scope="col">Autor</th>
                             <th scope="col">Url</th>
@@ -39,7 +38,6 @@
                     </thead>
                     <tbody v-for="note in listaNotas" :key="note.texto">
                         <tr>
-                            <th scope="row"></th>
                             <td>{{note.texto}}</td>
                             <td>{{note.autor}}</td>
                             <td><a :href="note.archivo.url">{{note.archivo.nombre}}</a></td>
