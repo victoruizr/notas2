@@ -6,13 +6,13 @@
                 <a href="/" class="navbar-brand">Ejemplo Vue+Firebase</a>
                 {{usuario}}
                 <button type="button" class="btn btn-secondary ml-auto" v-on:click="logout">Log out</button>
-                
+
             </nav>
         </div>
     </div>
-    <div class="row mt-5 ml-2">
-        <div class="col-sm-4">
-            <div class="card" >
+    <div class="row mt-5 ml-1 ">
+        <div class="col-sm-4 mb-2">
+            <div class="card">
                 <div class="card-header">
                     Agrega una nueva tarea
                     <div class="card-body">
@@ -26,25 +26,23 @@
             </div>
         </div>
         <div class="col-sm-12 col-md-8 text-center ">
-            <div class="card-body">
-                <table class="table table-dark">
-                    <thead>
-                        <tr>
-                            <th scope="col">Texto</th>
-                            <th scope="col">Autor</th>
-                            <th scope="col">Url</th>
-                        </tr>
-                    </thead>
-                    <tbody v-for="note in listaNotas" :key="note.texto">
-                        <tr>
-                            <td>{{note.texto}}</td>
-                            <td>{{note.autor}}</td>
-                            <td><a :href="note.archivo.url">{{note.archivo.nombre}} </a>
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Texto</th>
+                        <th scope="col">Autor</th>
+                        <th scope="col">Url</th>
+                    </tr>
+                </thead>
+                <tbody v-for="note in listaNotas" :key="note.texto">
+                    <tr>
+                        <td>{{note.texto}}</td>
+                        <td>{{note.autor}}</td>
+                        <td><a :href="note.archivo.url">{{note.archivo.nombre}} </a>
                             <button class="btn btn-secondary" v-on:click="borrarNota(note)">Borrar</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
@@ -114,7 +112,7 @@ export default {
         }
     },
     computed: {
-        usuario:function(){
+        usuario: function () {
             return firebase.auth().currentUser.email
         }
     }
@@ -124,4 +122,3 @@ export default {
 <style scoped>
 
 </style>
-
