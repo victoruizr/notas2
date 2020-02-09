@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-7 text-center ">
+        <div class="col-6 col-md-7 text-center ">
             <table class="table table-dark p-0">
                 <thead>
                     <tr>
@@ -38,7 +38,7 @@
                     <tr>
                         <td>{{note.texto}}</td>
                         <td>{{note.autor}}</td>
-                        <td><a :href="note.archivo.url">{{note.archivo.nombre}} </a> <button class="btn btn-secondary" v-on:click="borrarNota(note)">Borrar</button></td>
+                        <td><a :href="note.archivo.url">{{note.archivo.nombre}} </a><button class="btn btn-secondary" v-on:click="borrarNota(note)">Borrar</button></td>
                     </tr>
                 </tbody>
             </table>
