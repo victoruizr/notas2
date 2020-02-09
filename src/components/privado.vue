@@ -33,7 +33,6 @@
                             <th scope="col">Texto</th>
                             <th scope="col">Autor</th>
                             <th scope="col">Url</th>
-                            <th scope="col"></th>
                         </tr>
                     </thead>
                     <tbody v-for="note in listaNotas" :key="note.texto">
