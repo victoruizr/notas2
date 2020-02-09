@@ -1,10 +1,10 @@
 <template>
-  <div id="app">
+  <div id="app" class="mt-0">
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
