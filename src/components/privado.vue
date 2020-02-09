@@ -40,8 +40,8 @@
                         <tr>
                             <td>{{note.texto}}</td>
                             <td>{{note.autor}}</td>
-                            <td><a :href="note.archivo.url">{{note.archivo.nombre}}</a></td>
-                            <td><button class="btn btn-secondary" v-on:click="borrarNota(note)">Borrar</button></td>
+                            <td><a :href="note.archivo.url">{{note.archivo.nombre}} </a>
+                            <button class="btn btn-secondary" v-on:click="borrarNota(note)">Borrar</button></td>
                         </tr>
                     </tbody>
                 </table>
